@@ -1,0 +1,21 @@
+/* Animations */
+@keyframes pulseGlow {
+  0%, 100% { text-shadow: 0 0 6px #9f7aea; }
+  50% { text-shadow: 0 0 20px #d8b4fe; }
+}
+.animate-pulse {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+@keyframes floatUpDown {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+.float-animation {
+  animation: floatUpDown 4s ease-in-out infinite;
+}
+
+.animated-gradient {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #e776ba 100%);
+  color: white;
+}
