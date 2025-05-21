@@ -17,18 +17,18 @@
 <body class="bg-white text-gray-800 font-sans">
 
   <!-- Hero Section (with long email input) -->
-  <section class="text-center py-20 px-6 animated-gradient">
-    <img src="images/logo.png" alt="MindPlanr Logo" class="mx-auto w-36 md:w-48 mb-6 float-animation" />
-    <h1 class="text-5xl font-extrabold mb-6 drop-shadow-lg animate-pulse leading-tight">
+  <section class="text-center py-12 sm:py-20 px-4 sm:px-6 animated-gradient">
+    <img src="images/logo.png" alt="MindPlanr Logo" class="mx-auto w-24 sm:w-36 md:w-48 mb-6 float-animation" />
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 sm:mb-6 drop-shadow-lg animate-pulse leading-tight">
       Routines That Work with Your Brain
     </h1>
-    <p class="text-xl max-w-3xl mx-auto mb-10 drop-shadow-md px-4">
+    <p class="text-lg sm:text-xl max-w-3xl mx-auto mb-8 sm:mb-10 drop-shadow-md px-2 sm:px-4">
       MindPlanr is a lifestyle planner designed for ADHD minds. Build structure, stay focused, and feel in control — your way.
     </p>
 
     <!-- Email subscription form -->
-    <form id="subscribeForm" class="max-w-xl mx-auto flex flex-col gap-3 justify-center items-center" onsubmit="submitEmail(event)">
-      <div class="w-full flex gap-3">
+    <form id="subscribeForm" class="max-w-xl mx-auto flex flex-col gap-3 justify-center items-center px-4" onsubmit="submitEmail(event)">
+      <div class="w-full flex flex-col sm:flex-row gap-3">
         <input
           type="email"
           id="emailInput"
@@ -36,46 +36,46 @@
           placeholder="Enter your email"
           required
           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-          class="flex-grow rounded-l-3xl px-6 py-4 text-gray-900 font-semibold text-lg focus:outline-none focus:ring-4 focus:ring-purple-400 transition"
+          class="w-full rounded-3xl sm:rounded-l-3xl sm:rounded-r-none px-6 py-4 text-gray-900 font-semibold text-base sm:text-lg focus:outline-none focus:ring-4 focus:ring-purple-400 transition"
         />
         <button
           type="submit"
-          class="bg-purple-700 hover:bg-purple-900 transition rounded-r-3xl px-8 py-4 font-bold text-xl shadow-lg"
+          class="w-full sm:w-auto bg-purple-700 hover:bg-purple-900 transition rounded-3xl sm:rounded-l-none sm:rounded-r-3xl px-8 py-4 font-bold text-lg sm:text-xl shadow-lg"
         >
           Subscribe
         </button>
       </div>
       <p id="emailError" class="text-red-500 font-medium hidden">Please enter a valid email address</p>
-      <p id="successMessage" class="text-white bg-purple-700 px-6 py-3 rounded-xl text-xl font-semibold hidden">Thank you for subscribing!</p>
+      <p id="successMessage" class="text-white bg-purple-700 px-6 py-3 rounded-xl text-lg sm:text-xl font-semibold hidden">Thank you for subscribing!</p>
     </form>
   </section>
 
   <!-- Why MindPlanr - More colorful & text-rich -->
-  <section class="py-16 px-6 max-w-5xl mx-auto bg-gradient-to-r from-purple-100 via-pink-100 to-purple-100 rounded-3xl shadow-lg mt-20">
-    <h2 class="text-4xl font-extrabold text-center mb-12 text-purple-900 drop-shadow-md">
+  <section class="py-12 sm:py-16 px-4 sm:px-6 max-w-5xl mx-auto bg-gradient-to-r from-purple-100 via-pink-100 to-purple-100 rounded-3xl shadow-lg mt-12 sm:mt-20">
+    <h2 class="text-3xl sm:text-4xl font-extrabold text-center mb-8 sm:mb-12 text-purple-900 drop-shadow-md">
       Why MindPlanr?
     </h2>
-    <div class="grid md:grid-cols-2 gap-10 text-purple-800 text-lg leading-relaxed">
-      <div class="bg-white p-8 rounded-2xl shadow-md border border-purple-200 hover:shadow-xl transition flex flex-col justify-center">
-        <h3 class="text-2xl font-semibold mb-4 flex items-center gap-3">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-10 text-purple-800 text-base sm:text-lg leading-relaxed">
+      <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-md border border-purple-200 hover:shadow-xl transition flex flex-col justify-center">
+        <h3 class="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4 flex items-center gap-3">
           🧠 Stay Focused
         </h3>
         <p>MindPlanr helps you create gentle task flows and flexible routines designed to keep you productive — without burnout.</p>
       </div>
-      <div class="bg-white p-8 rounded-2xl shadow-md border border-purple-200 hover:shadow-xl transition flex flex-col justify-center">
-        <h3 class="text-2xl font-semibold mb-4 flex items-center gap-3">
+      <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-md border border-purple-200 hover:shadow-xl transition flex flex-col justify-center">
+        <h3 class="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4 flex items-center gap-3">
           🔁 Routines That Stick
         </h3>
         <p>We adapt your schedule to your unique rhythms — making routines feel natural and doable every day.</p>
       </div>
-      <div class="bg-white p-8 rounded-2xl shadow-md border border-purple-200 hover:shadow-xl transition flex flex-col justify-center">
-        <h3 class="text-2xl font-semibold mb-4 flex items-center gap-3">
+      <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-md border border-purple-200 hover:shadow-xl transition flex flex-col justify-center">
+        <h3 class="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4 flex items-center gap-3">
           ⏰ Smart Reminders
         </h3>
         <p>Helpful nudges that support your focus, rather than overwhelm or annoy you.</p>
       </div>
-      <div class="bg-white p-8 rounded-2xl shadow-md border border-purple-200 hover:shadow-xl transition flex flex-col justify-center">
-        <h3 class="text-2xl font-semibold mb-4 flex items-center gap-3">
+      <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-md border border-purple-200 hover:shadow-xl transition flex flex-col justify-center">
+        <h3 class="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4 flex items-center gap-3">
           📝 Voice & Quick Notes
         </h3>
         <p>Capture scattered thoughts instantly, turning them into manageable tasks on the go.</p>
@@ -84,47 +84,47 @@
   </section>
 
   <!-- Built for Neurodivergent Minds -->
-  <section class="bg-purple-50 py-20 px-8 rounded-3xl max-w-4xl mx-auto shadow-lg mt-20">
+  <section class="bg-purple-50 py-12 sm:py-20 px-4 sm:px-8 rounded-3xl max-w-4xl mx-auto shadow-lg mt-12 sm:mt-20">
     <div class="text-center max-w-xl mx-auto">
-      <h2 class="text-4xl font-bold mb-8 text-purple-900 drop-shadow-sm">Made for Neurodivergent Minds</h2>
-      <p class="text-xl mb-10 text-purple-800">
+      <h2 class="text-3xl sm:text-4xl font-bold mb-6 sm:mb-8 text-purple-900 drop-shadow-sm">Made for Neurodivergent Minds</h2>
+      <p class="text-lg sm:text-xl mb-8 sm:mb-10 text-purple-800">
         We get it — life with ADHD or neurodivergence can feel overwhelming sometimes. If you've ever thought:
       </p>
-      <ul class="text-left list-disc list-inside text-purple-700 space-y-6 mb-10 text-lg">
-        <li class="flex items-center gap-4 justify-start">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-purple-600 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <ul class="text-left list-disc list-inside text-purple-700 space-y-4 sm:space-y-6 mb-8 sm:mb-10 text-base sm:text-lg">
+        <li class="flex items-center gap-3 sm:gap-4 justify-start">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 sm:w-7 sm:h-7 text-purple-600 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v4m0 8v4m4-12h4M4 12H8m7.071 7.071a8 8 0 11-11.314-11.314 8 8 0 0111.314 11.314z"/>
             <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2" />
           </svg>
           "I make plans, then forget them."
         </li>
-        <li class="flex items-center gap-4 justify-start">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-purple-600 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <li class="flex items-center gap-3 sm:gap-4 justify-start">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 sm:w-7 sm:h-7 text-purple-600 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6M12 9v6M5 19l14-14"/>
           </svg>
           "I get overwhelmed and stuck."
         </li>
-        <li class="flex items-center gap-4 justify-start">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-purple-600 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <li class="flex items-center gap-3 sm:gap-4 justify-start">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 sm:w-7 sm:h-7 text-purple-600 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M9 17v-6h6v6m-6-6l3-3 3 3"/>
             <rect x="4" y="4" width="16" height="16" rx="2" ry="2" stroke="currentColor" stroke-width="2" />
           </svg>
           "I can't stick to routines."
         </li>
       </ul>
-      <p class="text-xl font-semibold text-purple-900">
+      <p class="text-lg sm:text-xl font-semibold text-purple-900">
         You're definitely not alone — MindPlanr is designed with you in mind.
       </p>
     </div>
   </section>
 
   <!-- Final CTA -->
-  <section class="text-center py-20 px-6">
-    <h2 class="text-3xl font-bold mb-6 text-purple-700">Join 500+ on the Waitlist</h2>
-    <p class="text-lg mb-8 text-purple-600">
+  <section class="text-center py-12 sm:py-20 px-4 sm:px-6">
+    <h2 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-purple-700">Join 500+ on the Waitlist</h2>
+    <p class="text-base sm:text-lg mb-6 sm:mb-8 text-purple-600">
       Sign up now to get early access, exclusive tips, and updates on ADHD-friendly routines.
     </p>
-    <a href="YOUR_GOOGLE_FORM_LINK" target="_blank" class="inline-block bg-purple-600 text-white text-lg font-semibold px-8 py-4 rounded-full shadow-lg hover:bg-purple-700 transition">
+    <a href="YOUR_GOOGLE_FORM_LINK" target="_blank" class="inline-block bg-purple-600 text-white text-base sm:text-lg font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-full shadow-lg hover:bg-purple-700 transition">
       Join the Waitlist
     </a>
   </section>
